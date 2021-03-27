@@ -100,47 +100,32 @@ input{
     max-width: 1160px;
     padding: 0 15px;
     margin: 0 auto;
-	width: 100%;
+}
+.header .container {
+    max-width: 1220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .header{
 	background-color: black;
-    max-width: 1440px;
-    margin: 0 auto;
     width: 100%;
     position: absolute;
     top: 40px;
     left: 0;
-	height: 55px;
 }
-.logo {
-	float: left;
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
 }
-.navigation{
-	float: right;
-}
-.navigation, .menu{
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-.navigation, .navigation__item{
-	display: inline-block;
-}
-.clearfix:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-.navigation a, .logo{
-	line-height: 55px;
-}
-.a{
-	color: #00c0ff;
-	padding: 0 30px;
+.a {
+    margin: 0 42px;
 	transition: .3s;
 }
-.logo{
-	line-height: 75px;
+.menu a {
+    color: #00c0ff;
 }
 .a:hover{
 	transition: .3s;
@@ -150,7 +135,7 @@ input{
 	position: relative;
 	width: 32px;
 	height: 32px;
-	display: flex;
+	display: none;
 	align-items: center;
 	justify-content: center;
 	cursor: pointer;
@@ -180,21 +165,28 @@ input{
 	bottom: 0;
 }
 .main{
+    min-height: 100vh;
+    background: url("../images/banner.jpg") no-repeat 100% 0;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 384px 0 160px;
 	color: white;
-	background-image: url(../images/banner.jpg);
-	background-size: cover;
-	min-height: 100vh;
-}
-.main-inner{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 280px 300px;
 	text-align: center;
 }
+.main .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .sport{
-	width: 580px;
-	margin-bottom: 100px;
+	margin-bottom: 80px;
+}
+p{
+	padding: 0 150px;
 }
 .button-wrapper{
 	text-align: center;
@@ -228,9 +220,9 @@ input{
 	bottom: calc(50% - 2px);
 }
 @media(max-width: 800px){
-	.main-inner{
+	.main{
 		font-size: 15px;
-		padding: 280px 150px;
+		padding: 284px 10px;
 	}
 	.btn{
 		padding: 10px 20px;:
@@ -259,9 +251,9 @@ input{
 		align-items: center;
 	}
 }
-@media(max-width: 500px){
-	.main-inner{
-		font-size: 13px;
-		padding: 280px 100px;
+@media(max-width: 600px){
+	p{
+		font-size: 20px;
+		padding: 184px 0;
 	}
 }
