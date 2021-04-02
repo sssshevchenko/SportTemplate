@@ -185,7 +185,7 @@ input{
 .sport{
 	margin-bottom: 80px;
 }
-p{
+.p{
 	padding: 0 150px;
 }
 .button-wrapper{
@@ -244,7 +244,6 @@ p{
 	line-height: 2;
 }
 .main-3{
-    min-height: 50vh;
     background-color: #1b1b1b;
     background-size: cover;
     display: flex;
@@ -266,6 +265,181 @@ p{
 	padding: 0 10px 0 0;
 }
 
+.priorities{
+	padding: 90px 0 95px;
+	background: url("../images/priorities.jpg") no-repeat 100% 0;
+	background-size: cover;
+}
+.title-29{
+	font-size: 29px;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 700;
+	margin-bottom: 40px;
+	font-family: Roboto, Raleway, Arial, sans-serif;
+	color: #00c0ff;
+}
+.title-38{
+	font-size: 38px;
+	line-height: 1.2;
+	text-transform: uppercase;
+	color: #00c0ff;
+	font-family: Roboto, Raleway, Arial, sans-serif;
+	font-weight: 400;
+}
+.text{
+	font-size: 21px;
+	line-height: 33px;
+	color: #00c0ff;
+	text-align: center;
+	margin: 0 auto 80px;
+	max-width: 980px;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.col-33{
+	width: calc(33.3% - 23px);
+	flex-shrink: 0;
+	margin: 0 0 30px;
+}
+.col-50{
+	width: calc(50% - 15px);
+}	
+.priorities .col-33{
+	text-align: center;
+	background: rgba(3, 3, 3, 0.5);
+	padding: 58px 85px 75px; 
+}
+.priorities .col-33 h5{
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 17px;
+	margin:  0 0 55px;
+	font-family: Robobto, Raleway, Arial, sans-serif;
+	font-weight: 700;
+}
+.priorities .col-33 p{
+	font-size: 17px;
+	color: #fff;
+	line-height: 1.2;
+	text-align: left;
+	margin: 0 0 55px;
+}
+.author__name{
+	font-size: 15px;
+	line-height: 1.2;
+	color: #fff;
+	text-transform: uppercase;
+	margin-bottom: 2px;
+	font-family: Robobto, Raleway, Arial, sans-serif;
+	font-weight: 700;
+}
+.author__position{
+	color: #fff;
+	font-size: 15px;
+}
+.quote{
+	background: #1b1b1b;
+	background-size: cover;
+	padding: 120px 0 65px;
+	color: #00c0ff;
+	text-align: center;
+}
+.p-quote{
+	margin: 0 245px;
+	padding: 0 0 50px;
+	line-height: 1.5;
+	font-family: Raleway, Arial, sans-serif;
+	font-weight: 600;
+	font-size: 15px;
+}
+.quote__name{
+	font-size: 15px;
+	margin-bottom: 2px;
+	font-family: Raleway, Arial, sans-serif;
+	font-weight: 600;
+}
+.nature{
+	background: #000;
+	padding: 185px 0 330px;
+	position: relative;
+}
+.nature .text{
+	text-align: left;
+	margin-bottom: 0;
+}
+.nature__image{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 50%;
+	height: 100%;
+	z-index: 5;
+	background: url("../images/nature.jpg") no-repeat 0 50%;
+	background-size: cover;
+}
+.nature .col-50{
+	padding-right: 50px;
+}
+.tickets{
+	background: url("../images/tickets.jpg") no-repeat 50% 50%;
+	background-size: cover;
+	padding: 200px 0 200px;
+	color: #fff;
+	text-align: right;
+}
+.tickets .row,
+.tickets .button-wrapper{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: center;
+}
+.title-40{
+	margin: 0px 0 0 285px;
+	font-size: 50px;
+	margin-bottom: 25px;
+	font-family: Robobto, Raleway, Arial, sans-serif;
+	font-weight: 700;
+}
+.text-tickets{
+	margin: 0 0 0 267px;
+    font-size: 15px;
+	line-height: 1.2;
+	font-family: Robobto, Raleway, Arial, sans-serif;
+	font-weight: 400;
+}
+.tickets .btn{
+	display: inline-block;
+	vertical-align: top;
+	background: rgba(255, 255, 255, .8);
+	padding: 15px 60px;
+    border-radius: 35px;
+	text-align: center;
+	color: #00c0ff;
+	border: 1px solid #000;
+	transition: .3s;
+}
+.btn:hover{
+	background: #3961DF;
+	color: #39DF96;
+}
+.tickets .button-wrapper{
+	font-size: 20px;
+	padding: 50px 0 0;
+}
+@media(max-width: 1100px){
+	.col-33 .priorities{
+		padding: 35px 30px 45px;
+	}
+	.priorities .col-33 h5
+	.priorities .col-33 p{
+		margin-bottom: 30px;
+	}
+}
 @media(max-width: 800px){
 	.main{
 		font-size: 15px;
@@ -298,6 +472,27 @@ p{
 		align-items: center;
 	}
 }
+@media(max-width: 768px){
+	.col-33{
+		width: calc(50% - 15px);
+		margin-bottom: 30px;
+	}
+	.priorities{
+		padding: 60px 0 65px;
+	}
+	.text{
+		font-size: 18px;
+		line-height: 24px;
+		margin-bottom: 40px;
+	}
+	.title-29{
+		font-size: 24px;
+		margin-bottom: 25px;
+	}
+	.title-38{
+		font-size: 28px;
+	}
+}
 @media(max-width: 600px){
 	p{
 		font-size: 20px;
@@ -308,5 +503,25 @@ p{
 		justify-content: center;
 		flex-flow: column;
 		flex-wrap: wrap;
+	}
+	.col-50{
+		width: 100%;
+	}
+	.nature__image{
+		display: none;
+	}
+	.nature{
+		padding: 60 px 0 65px;
+	}
+	.nature .col-50{
+		padding-right: 0;
+	} 
+}
+@media(max-width: 480px){
+	.col-33{
+		width: 100%;
+	}
+	.priorities .col-33 p{
+		text-align: center;
 	}
 }
