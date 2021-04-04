@@ -502,15 +502,15 @@ input{
 	text-align: center;
 }
 .p-quote{
-	margin: 0 245px;
+	margin: 0 185px;
 	padding: 0 0 50px;
 	line-height: 1.5;
 	font-family: Raleway, Arial, sans-serif;
 	font-weight: 600;
-	font-size: 15px;
+	font-size: 20px;
 }
 .quote__name{
-	font-size: 15px;
+	font-size: 20px;
 	margin-bottom: 2px;
 	font-family: Raleway, Arial, sans-serif;
 	font-weight: 600;
@@ -593,6 +593,78 @@ input{
 	font-size: 20px;
 	padding: 50px 0 0;
 }
+.issues{
+	padding: 205px 0 0;
+	background: #000;
+	color: #00c0ff;
+	text-align: center;
+}
+
+.issues .col-50{
+	width: 50%;
+	margin-bottom: 230px;
+	padding: 0px 30px;
+}
+.issues p,
+.issues .p-20{
+	margin: 0 55px;
+	font-size: 17px;
+	line-height: 1.5;
+	font-family: Raleway, Arial, sans-serif;
+	font-weight: 400;
+}
+.issues h4{
+	font-size: 20px;
+	font-family: Raleway, Arial, sans-serif;
+	font-weight: 500;
+	margin-bottom: 50px;
+}
+.issues img{
+	max-width: 120px;
+	height: 120px;
+    margin: 50px 215px;
+}
+.trips{
+	padding: 85px 0;
+	background: #1b1b1b;
+	text-align: center;
+	color: #fff;
+}
+.trips .container{
+	display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.trips h4{
+	margin-bottom: 15px;
+	font-size: 20px;
+	font-family: Raleway, Arial, sans-serif;
+	font-weight: 500;
+}
+.trips p{
+	font-size: 17px;
+	font-family: Raleway, Arial, sans-serif;
+	font-weight: 500;
+}
+.quote{
+	padding: 110px 0;
+	background: #000;
+	text-align: center;
+	color: #00c0ff;
+}
+@media(max-width: 1130px){
+	.issues img{
+		margin: 50px 120px;
+	}
+	.issues p, 
+	.issues .p-20{
+		margin: 0 0;
+	}
+	.issues .col-50{
+		padding: 0 0;
+	}
+}
 @media(max-width: 1100px){
 	.col-33 .priorities{
 		padding: 35px 30px 45px;
@@ -600,6 +672,12 @@ input{
 	.priorities .col-33 h5
 	.priorities .col-33 p{
 		margin-bottom: 30px;
+	}
+	.title-40{
+		margin: 0 0;
+	}
+	.text-tickets {
+		margin: 0 0 0 110px;
 	}
 }
 @media(max-width: 800px){
@@ -641,6 +719,16 @@ input{
 		    -ms-flex-align: center;
 		        align-items: center;
 	}
+	.trips .container{
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-around;
+		width: 80%;
+	}
+	.trips p{
+		margin-bottom: 45px;
+	}
 }
 @media(max-width: 768px){
 	.col-33{
@@ -662,25 +750,20 @@ input{
 	.title-38{
 		font-size: 28px;
 	}
+	.p-quote{
+		margin: 0 0;
+	}
+	.issues img{
+		margin: 50px 60px;
+	}
 }
 @media(max-width: 600px){
-	p{
-		font-size: 20px;
-		padding: 184px 0;
+	.p{
+		font-size: 15px;
+		padding: 0 0;
 	}
-	.main-3 .col-33{
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-pack: center;
-		    -ms-flex-pack: center;
-		        justify-content: center;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		    -ms-flex-flow: column;
-		        flex-flow: column;
-		-ms-flex-wrap: wrap;
-		    flex-wrap: wrap;
+	.p-3 {
+		font-size: 14px;
 	}
 	.col-50{
 		width: 100%;
@@ -694,6 +777,16 @@ input{
 	.nature .col-50{
 		padding-right: 0;
 	} 
+	.issues img{
+		margin: 50px 40px;
+	}
+	.trips .container{
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-around;
+		width: 50%;
+	}
 }
 @media(max-width: 480px){
 	.col-33{
@@ -702,4 +795,41 @@ input{
 	.priorities .col-33 p{
 		text-align: center;
 	}
-}s
+	.p-quote, .quote__name {
+		font-size: 15px;
+	}
+	.issues p, 
+	.issues .p-20{
+		font-size: 12px;
+	}
+	.issues img{
+		height: 70px;
+	}
+	.issues .col-50{
+		margin-bottom: 50px;
+	}
+	.issues h4{
+		font-size: 15px;
+	}
+	.trips h4{
+		font-size: 16px;
+	}
+	.trips p{
+		font-size: 13px;
+	}
+}
+@media(max-width: 400px){
+	.issues img{
+		margin: 50px 20px;
+	}
+	.issues p, 
+	.issues .p-20{
+		font-size: 10px;
+	}
+	.trips h4{
+		font-size: 15px;
+	}
+	.trips p{
+		font-size: 12px;
+	}
+}
